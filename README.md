@@ -26,7 +26,7 @@ coux([db, "mydocid"], function(err, doc) {
 
 // Create a document letting the server assign the id:
 var newDoc = {foo : "bar"};
-coux.post(db, , function(err, ok) {
+coux.post(db, newDoc, function(err, ok) {
   console.log(ok)
   
   // Delete a document without sending the doc body
